@@ -68,3 +68,4 @@ def go_to_issues_tab():
 @allure.step('Проверяем, что issue с названием "" {issue_name} "" есть в списке')
 def check_expected_issue_name(issue_name: str):
     browser.element('#issue_4_link').should(have.text(issue_name)).should(be.visible)
+
