@@ -11,8 +11,8 @@ def test_repo_issue_name_only_selene():
     browser.element('#issues-tab').click()
 
     # вариант, когда мы знаем айди issue
-    browser.element('#issue_4_link').should(have.text(expected_issue_name))
+    browser.element('#issue_4_link').should(have.text(expected_issue_name)).should(be.visible)
 
     # вариант, когда мы НЕ знаем айди issue
 
-    # browser.all('[aria-label="Issues"]').element_by(have.text(expected_issue_name))
+    # browser.all('[aria-label="Issues"]').element_by(have.text(expected_issue_name)).should(be.visible)
